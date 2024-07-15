@@ -29,7 +29,7 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="440dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 app:srcCompat="@mipmap/ic_loeche1" />
@@ -40,7 +40,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="70dp"
                 android:layout_marginVertical="20dp"
-                android:ems="10"
                 android:hint="USUARIO"
                 android:inputType="text"
                 android:textAlignment="center" />
@@ -51,7 +50,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="70dp"
                 android:layout_marginVertical="40dp"
-                android:ems="10"
                 android:hint="CONTRASEÑA"
                 android:inputType="textPassword"
                 android:textAlignment="center" />
@@ -59,8 +57,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="20dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
@@ -69,22 +65,26 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_marginBottom="50dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rounded_corner"
-                    android:backgroundTint="#F0F0F0"
-                    android:text="INICIAR SESION" />
+                    android:backgroundTint="@color/white"
+                    android:text="INICIAR SESION"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/bAcceder2"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_marginBottom="50dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rounded_corner"
-                    android:backgroundTint="#F0F0F0"
-                    android:text="REGISTRARSE" />
+                    android:backgroundTint="@color/white"
+                    android:text="REGISTRARSE"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
             </LinearLayout>
 
         </LinearLayout>

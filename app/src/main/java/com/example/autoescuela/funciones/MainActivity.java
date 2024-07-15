@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         Button acceder=findViewById(R.id.bAcceder1);
+        Button registrarse=findViewById(R.id.bAcceder2);
         EditText usuario=findViewById(R.id.tUsuario);
         EditText contrasenia=findViewById(R.id.tContrasenia);
 
@@ -36,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent home= new Intent(getApplicationContext(), pantallaHome.class);
                 startActivity(home);
+            }
+        });
+
+        registrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registro = new Intent(getApplicationContext(), Registro.class);
+                startActivity(registro);
             }
         });
     }
