@@ -46,6 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -62,12 +63,14 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tUsuarioReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -75,6 +78,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -91,12 +95,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tPassReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -104,6 +109,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -120,12 +126,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tNombreReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -133,6 +140,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -149,12 +157,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tCorreoReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -162,6 +171,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -178,12 +188,13 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tTelefonoReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
@@ -191,6 +202,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
@@ -207,21 +219,25 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/tDniReg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="40dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_corner"
+                    android:gravity="center"
                     android:text="TextView" />
 
             </LinearLayout>
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/ibRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
                 app:srcCompat="@drawable/baseline_directions_car_24" />
 
         </LinearLayout>
