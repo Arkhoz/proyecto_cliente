@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundTint="#FFFFFF"
     tools:context=".funciones.pantallaHome">
 
     <LinearLayout
@@ -45,6 +46,19 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+                        <FrameLayout
+                            android:layout_width="101dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="center"
+                                tools:srcCompat="@mipmap/cuaderno" />
+                        </FrameLayout>
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -62,214 +76,73 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:fontFamily="monospace"
                                     android:gravity="center"
-                                    android:text="dia" />
+                                    android:text="dia"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/textView4"
+                                    android:id="@+id/textView43"
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
                                     android:layout_weight="1"
+                                    android:fontFamily="monospace"
                                     android:gravity="center"
-                                    android:text="hora" />
+                                    android:text="hora"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    />
                             </LinearLayout>
 
-                            <TextView
-                                android:id="@+id/textView5"
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
-                                android:gravity="center"
-                                android:text="profesor" />
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView52"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="monospace"
+                                    android:gravity="center"
+                                    android:text="profesor"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="monospace"
+                                    android:gravity="center"
+                                    android:text="Categoria"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_launcher_foreground" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
+                        <FrameLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
+                            android:background="#D64545">
 
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                            <Button
+                                android:id="@+id/bEliminarClase"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="#D64545"
+                                android:foreground="@android:drawable/ic_menu_delete"
+                                android:foregroundGravity="center"
+                                android:foregroundTint="#FFFFFF" />
+                        </FrameLayout>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginHorizontal="50dp"
-                    android:layout_marginVertical="20dp"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="TextView" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
