@@ -1,7 +1,6 @@
 package com.example.autoescuela.clases;
 
 public class Estudiante {
-    private int id;
     private String usuario;
     private String password;
     private String nombre;
@@ -9,8 +8,7 @@ public class Estudiante {
     private String telefono;
     private String dni;
 
-    public Estudiante(int id, String usuario, String password, String nombre, String correo, String telefono, String dni) {
-        this.id = id;
+    public Estudiante(String usuario, String password, String nombre, String correo, String telefono, String dni) {
         this.usuario = usuario;
         this.password = password;
         this.nombre = nombre;
@@ -19,13 +17,7 @@ public class Estudiante {
         this.dni = dni;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUsuario() {
         return usuario;

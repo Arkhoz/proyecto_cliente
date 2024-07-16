@@ -1,7 +1,6 @@
 package com.example.autoescuela.clases;
 
 public class Profesor {
-        private int id;
         private String usuario;
         private String password;
         private String nombre;
@@ -10,8 +9,7 @@ public class Profesor {
         private String[] categoria;
         private int aniosExperiencia;
 
-    public Profesor(int id, String usuario, String password, String nombre, String apellidos, int edad, String[] categoria, int aniosExperiencia) {
-        this.id = id;
+    public Profesor(String usuario, String password, String nombre, String apellidos, int edad, String[] categoria, int aniosExperiencia) {
         this.usuario = usuario;
         this.password = password;
         this.nombre = nombre;
@@ -21,13 +19,6 @@ public class Profesor {
         this.aniosExperiencia = aniosExperiencia;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getUsuario() {
         return usuario;
