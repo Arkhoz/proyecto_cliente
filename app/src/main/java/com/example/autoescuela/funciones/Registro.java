@@ -1,5 +1,6 @@
 package com.example.autoescuela.funciones;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -72,22 +73,38 @@ public class Registro extends AppCompatActivity {
                         MediaType.get("application/json; charset=utf-8"));
 
                 Request peticion = new Request.Builder()
-                        .url("jdbc:mysql://localhost:3306/ServerAutoEscuela2")
-                        .get()
+                        .url("http://10.0.2.2:8080/api/registro")
+                        .post(body1)
                         .build();
 
                 cliente.newCall(peticion).enqueue(new Callback() {
                     @Override
                     public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                        Toast.makeText(getApplicationContext(), "Ha ocurrido un error", Toast.LENGTH_SHORT).show();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(), "Ha ocurrido un error", Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+                        e.printStackTrace();
 
                     }
 
                     @Override
                     public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
-                        Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_SHORT).show();
-
-
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                if (response.isSuccessful()) {
+                                    Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
+                                    Intent home = new Intent(getApplicationContext(), pantallaHome.class);
+                                    startActivity(home);
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "Registro fallido", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
                     }
                 });
             }
