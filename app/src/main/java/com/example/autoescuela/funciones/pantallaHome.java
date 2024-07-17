@@ -3,10 +3,12 @@ package com.example.autoescuela.funciones;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -45,9 +47,26 @@ public class pantallaHome extends AppCompatActivity {
     public void generarcards(){
         lllistaclases=findViewById(R.id.lllistaclases);
 
-        L
+        CardView cardView=new CardView(this);
+        LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,dpToPx(75));
+        params.leftMargin = dpToPx(50);
+        params.rightMargin = dpToPx(50);
+        params.topMargin = dpToPx(20);
+        params.bottomMargin = dpToPx(20);
+        cardView.setRadius(dpToPx(20));
+
+        cardView.setLayoutParams(params);
+
+        LinearLayout tablageneral=new LinearLayout(this);
+        params=new LinearLayout.LayoutParams()
+
+        lllistaclases.addView(cardView);
 
 
+    }
+    public int dpToPx(int dp) {
+        float density = getResources().getDisplayMetrics().density;
+        return Math.round(dp * density);
     }
 
 
