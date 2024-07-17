@@ -58,7 +58,7 @@ public class Registro extends AppCompatActivity {
         ibregistrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usuario=tusuario.getText().toString();
+                String usuario=tusuario.getText().toString().toLowerCase();
                 String password=tpassword.getText().toString();
                 String nombre=tnombre.getText().toString();
                 String correo=tcorreo.getText().toString();

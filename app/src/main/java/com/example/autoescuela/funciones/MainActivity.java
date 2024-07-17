@@ -51,9 +51,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 OkHttpClient cliente = new OkHttpClient();
-                Gson gson = new Gson();
 
-                String usuariolog=usuario.getText().toString();
+                String usuariolog=usuario.getText().toString().toLowerCase();
                 String contrasenialog=contrasenia.getText().toString();
 
                 RequestBody body = new FormBody.Builder()
