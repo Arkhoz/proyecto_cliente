@@ -93,13 +93,29 @@ public class Registro extends AppCompatActivity {
 
                     @Override
                     public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                        final String respuestaserver = response.body().string();
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 if (response.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
-                                    Intent home = new Intent(getApplicationContext(), pantallaHome.class);
-                                    startActivity(home);
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if(respuestaserver.equals("registrado"))
+
+                                            {
+                                                Toast.makeText(getApplicationContext(), "Registro exitoso", Toast.LENGTH_SHORT).show();
+                                                Intent home = new Intent(getApplicationContext(), pantallaHome.class);
+                                                startActivity(home);
+                                            }
+                                            if(respuestaserver.equals("duplicado"))
+
+                                            {
+                                                Toast.makeText(getApplicationContext(), "Nombre de usuario ya en uso", Toast.LENGTH_SHORT).show();
+
+                                            }
+                                        }
+                                    });
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Registro fallido", Toast.LENGTH_SHORT).show();
                                 }

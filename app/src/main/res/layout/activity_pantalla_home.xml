@@ -30,6 +30,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/lllistaclases"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -45,19 +46,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
-
-                        <FrameLayout
-                            android:layout_width="101dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1">
-
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="center"
-                                tools:srcCompat="@mipmap/cuaderno" />
-                        </FrameLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -92,8 +80,7 @@
                                     android:gravity="center"
                                     android:text="hora"
                                     android:textSize="20sp"
-                                    android:textStyle="bold"
-                                    />
+                                    android:textStyle="bold" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -111,7 +98,7 @@
                                     android:gravity="center"
                                     android:text="profesor"
                                     android:textSize="20sp"
-                                    android:textStyle="bold"/>
+                                    android:textStyle="bold" />
 
                                 <TextView
                                     android:id="@+id/textView3"
@@ -122,7 +109,7 @@
                                     android:gravity="center"
                                     android:text="Categoria"
                                     android:textSize="20sp"
-                                    android:textStyle="bold"/>
+                                    android:textStyle="bold" />
                             </LinearLayout>
 
                         </LinearLayout>

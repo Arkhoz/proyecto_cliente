@@ -3,6 +3,7 @@ package com.example.autoescuela.funciones;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,8 @@ import com.example.autoescuela.funciones.HacerCita;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class pantallaHome extends AppCompatActivity {
+
+    LinearLayout lllistaclases;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,4 +40,15 @@ public class pantallaHome extends AppCompatActivity {
             }
         });
     }
+
+
+    public void generarcards(){
+        lllistaclases=findViewById(R.id.lllistaclases);
+
+        L
+
+
+    }
+
+
 }
